@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  z-index: 2;
+  background: linear-gradient(
+    180deg,
+    #1e20a2d7,
+    #234557,
+    #112038,
+    #111f38df,
+    #234557,
+    #1e3fa2
+  );
+  background-size: 400% 400%;
+  animation: gradient 30s ease-in-out infinite alternate;
+  height: 100%;
+  font-size: 62.5%;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 25%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.custom-backdrop-nav-effect {
+  background: rgba(28, 106, 126, 0.1);
+  backdrop-filter: saturate(180%) blur(10px);
+  letter-spacing: 0.2rem;
+}
