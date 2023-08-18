@@ -14,11 +14,11 @@ body {
     #1e3fa2
   );
   background-size: 400% 400%;
-  animation: gradient 30s ease-in-out infinite alternate;
   height: 100%;
   font-size: 62.5%;
   width: 100%;
   background-attachment: fixed;
+  animation: gradient 15s ease-in-out infinite alternate;
 }
 
 @keyframes gradient {
@@ -34,7 +34,7 @@ body {
 }
 
 .custom-backdrop-nav-effect {
-  background: rgba(28, 106, 126, 0.1);
-  backdrop-filter: saturate(180%) blur(10px);
+  background: rgba(28, 106, 126, 0.8);
+  backdrop-filter: brightness(160%) blur(7px);
   letter-spacing: 0.2rem;
 }
