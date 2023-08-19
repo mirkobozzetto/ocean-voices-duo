@@ -14,6 +14,7 @@
     <title>Ocen Voices Duo</title>
   </head>
   <body class="font-sans">
+    <!-- Nav -->
     <div class="relative">
       <div x-data="{ open: false }" class="relative">
         <nav
@@ -25,7 +26,7 @@
             class="hidden md:flex w-full justify-center items-center px-14 h-16 space-x-[3.3vw]"
           >
             <a href="#accueil" id="link-accueil">Accueil</a>
-            <a href="#bio" id="bio">Bio</a>
+            <a href="#bio" id="link-bio">Bio</a>
             <a href="#contact" id="contact">Contact</a>
           </div>
 
@@ -60,9 +61,23 @@
             class="flex flex-col items-center mt-6 h-0 overflow-hidden md:hidden"
             :class="{'h-3/4 transition-height duration-500 ease-in-out': open }"
           >
-            <a href="#accueil" id="accueil-mobile" class="mb-4">Accueil</a>
-            <a href="#bio" id="bio-mobile" class="mb-4">Bio</a>
-            <a href="#contact" id="contact-mobile" class="">Contact</a>
+            <a
+              href="#accueil"
+              id="accueil-mobile"
+              class="mb-4"
+              @click="open = false"
+              >Accueil</a
+            >
+            <a href="#bio" id="bio-mobile" class="mb-4" @click="open = false"
+              >Bio</a
+            >
+            <a
+              href="#contact"
+              id="contact-mobile"
+              class=""
+              @click="open = false"
+              >Contact</a
+            >
           </div>
         </nav>
         <div
@@ -72,10 +87,13 @@
       </div>
     </div>
 
+    <!--  -->
     <div class="h-[1vh]"></div>
+    <!--  -->
 
+    <!-- Accueil -->
     <section
-      x-bind:style="'padding-top: ' + (open ? '10rem' : '4rem') + ' + 5vh'"
+      x-bind:style="computePadding(open)"
       class="relative mt-6 transition-all duration-500 ease-in-out px-1 md:px-0"
       id="accueil"
     >
@@ -89,7 +107,7 @@
         </div>
       </div>
 
-      <!--  -->
+      <!-- Youtube -->
       <div class="flex justify-center items-center w-full mt-12 mb-6; md:mx-0">
         <div class="relative w-full md:w-[83.25vw] pt-[46.8vw] md:pt-[46.8vw]">
           <!-- 16:9 ratio augmenté de 25% -->
@@ -103,13 +121,68 @@
           ></iframe>
         </div>
       </div>
-      <!--  -->
     </section>
 
+    <!--  -->
+    <div class="h-[1vh]"></div>
+    <!--  -->
+
+    <!-- Biographie -->
+    <section x-bind:style="computePadding(open)" id="bio">
+      <div class="container mx-2 w-[90%]">
+        <h2 class="text-gray-50 mt-6 text-2xl md:text-4xl font-semibold mb-2">
+          Biographie
+        </h2>
+        <p class="text-gray-50 md:mx-0">
+          Ocean Voices Duo est une musique directement inspirée par l' océan, la
+          mer, les vagues, les baleines et dauphins, forces de la Nature et bien
+          plus.<br /><br />
+          Ocean Voices Duo est le nouveau projet musical électro-acoustique de
+          Guillaume Vanespen au gong à l'archet et de Thanas Kas au bendir et
+          effets électroniques. <br />
+          Le premier crée des sortes de vagues colorées, jouées sur la tranche
+          du gong et des sons rappelant les dauphins, joués sur la corde du
+          gong. <br />
+          Le second utilise des baguettes en caoutchouc frottées sur la peau du
+          bendir, imitant des chants de baleines, tandis que des
+          effets électroniques réharmonisent l'ensemble et plus encore. <br /><br />
+          La performance est agrémentée par des lampes projetant des prismes
+          lumineux aquatiques en mouvement sur 360 degrés qui rappellent
+          directement les flux et refluxs des vagues. <br /><br />
+          Composant de vastes paysages sonores, l'ensemble se présente telle une
+          immersion aquatique, un voyage sous-marin aux diverses contrastes
+          ... entre ombres et lumières, entre intensité et calme, forces et
+          intimités ...  <br />
+          <!-- Et ce, en différentes "étapes":<br /><br />
+          1° Plage<br />
+          2° Immersion <br />
+          3° Baleines<br />
+          4° Dauphins<br />
+          5° Tempête<br />
+          6° Ouragan<br />
+          7° Profondeurs, Monde du silence<br />
+          8° Sous-marins<br />
+          9° Ondes, Pollutions sonores <br />
+          10° Ocean's Theme<br />
+          11° Retour à la plage -->
+
+          <br /><br /><br /><br /><br />
+        </p>
+        <!-- <div class="flex justify-center mt-8">
+          <img
+            src="../src/img/bio_image.jpg"
+            alt="Image des artistes"
+            class="rounded-full w-48 h-48"
+          />
+        </div> -->
+      </div>
+    </section>
+
+    <!-- scripts -->
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
     ></script>
+    <script src="./main.js" defer></script>
   </body>
 </html>
-<div class="relative w-full md:w-[83.25vw] pt-[46.8vw] md:pt-[46.8vw]"></div>
