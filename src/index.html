@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
 
-    <link href="./dist/output.css" rel="stylesheet" />
+    <link href="../dist/output.css" rel="stylesheet" />
     <title>Ocen Voices Duo</title>
   </head>
   <body class="font-sans">
@@ -24,7 +24,7 @@
           <div
             class="hidden md:flex w-full justify-center items-center px-14 h-16 space-x-[3.3vw]"
           >
-            <a href="#accueil" id="accueil">Accueil</a>
+            <a href="#accueil" id="link-accueil">Accueil</a>
             <a href="#bio" id="bio">Bio</a>
             <a href="#contact" id="contact">Contact</a>
           </div>
@@ -77,11 +77,12 @@
     <section
       x-bind:style="'padding-top: ' + (open ? '10rem' : '4rem') + ' + 5vh'"
       class="relative mt-6 transition-all duration-500 ease-in-out px-1 md:px-0"
+      id="accueil"
     >
       <div class="w-full">
         <div class="flex justify-center items-center w-full">
           <img
-            src="./src/img/LOGO.svg"
+            src="../src/img/LOGO.svg"
             alt="Ocean Voice Duo - Logo"
             class="md:w-[33vh] opacity-95"
           />
@@ -111,3 +112,4 @@
     ></script>
   </body>
 </html>
+<div class="relative w-full md:w-[83.25vw] pt-[46.8vw] md:pt-[46.8vw]"></div>
