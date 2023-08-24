@@ -14,6 +14,18 @@
     <title>Ocen Voices Duo</title>
   </head>
   <body class="font-sans">
+    <!-- Scroll to top button -->
+    <div
+      class="text-cyan-500 hover:text-cyan-200"
+      id="up"
+      x-data="{ scrolled: false }"
+      @scroll.window="scrolled = (window.scrollY > 200)"
+      x-show="scrolled"
+      @click="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ↑
+    </div>
+
     <!-- Nav -->
     <div class="relative">
       <div x-data="{ open: false }" class="relative" id="home">
@@ -112,7 +124,7 @@
           <img
             src="../src/img/LOGO.svg"
             alt="Ocean Voice Duo - Logo"
-            class="opacity-95 md:w-[33vh]"
+            class="opacity-95 md:w-[21vw]"
           />
         </div>
 
@@ -165,7 +177,7 @@
 
               Ocean Voices Duo est la nouvelle création musicale
               électro-acoustique de Guillaume Vanespen (gong à l'archet) et de
-              Thanas Kas (bendir frotté et effets électroniques). <br />
+              Thanas Kas (bendir frotté et <br />effets électroniques). <br />
               Le premier crée des sortes de vagues colorées, longues notes,
               tantôt aiguës, tantôt graves, pouvant se mélanger, jouées sur la
               tranche du gong et des sons rappelant les sifflements de 
@@ -184,15 +196,15 @@
               rencontrer baleines et dauphins, ...  puis de défier la tempête,
               surmonter l’ouragan et descendre dans les abysses, ... "Monde du
               Silence", . . . sous-marins , codes morse, ondes, ... avant de
-              remonter tout doucement et progressivement vers le rivage ...
-              <br /><br />
+              remonter tout doucement <br />et progressivement vers le rivage
+              ... <br /><br />
 
-              Une performance hypnotique de 52 minutes qui peut
-              <br />s'adapter à d'autres timings, si besoin.<br /><br />
+              Une performance hypnotique de 52 minutes qui peut s'adapter
+              <br />à d'autres timings, si besoin.<br /><br />
 
               Le tout est agrémenté de projections lumineuses de prismes
-              aquatiques blancs et bleus en mouvement sur 360 degrés,
-              <br />imitant les flux et reflux des vagues. <br /><br />
+              aquatiques blancs et bleus en mouvement <br />sur 360 degrés,
+              imitant les flux et reflux des vagues. <br /><br />
             </p>
           </div>
         </div>
@@ -232,8 +244,8 @@
               inspiré par l’Océan.
               <br />
               Inspiration directe et spirituelle de la Nature, contrairement au
-              fait de s’inspirer des phénomènes humains comme la plupart du
-              temps.<br />
+              fait de s’inspirer des phénomènes humains comme <br />la plupart
+              du temps.<br />
               Dix ans plus tard, en juillet 2021, après avoir écouté Thanas Kas
               jouer des sons de baleines durant toute une journée, il était
               évident que le rêve pouvait enfin devenir réalité.<br /><br /><br /><br /><br />
@@ -243,7 +255,7 @@
               2024 ... ainsi qu'à l' organisation d' une tournée ...<br /><br />
 
               Et un grand projet à venir, Ocean Voices Duo accompagné de
-              Veejaying grâce à 3Dream3r (Xav) !<br /><br />
+              Veejaying <br />grâce à 3Dream3r (Xav) !<br /><br />
 
               Nous vous tiendrons au courant des avancées !<br /><br /><br /><br />
 
@@ -260,6 +272,6 @@
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
     ></script>
-    <script src="./main.js" defer></script>
+    <script src="./main.js"></script>
   </body>
 </html>

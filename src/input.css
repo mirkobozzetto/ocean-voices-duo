@@ -21,6 +21,42 @@ body {
   animation: gradient 15s ease-in-out infinite alternate;
 }
 
+#up {
+  animation: bounce 0.7s ease-in-out backwards;
+  width: 2rem;
+  height: 1rem;
+  position: fixed;
+  bottom: 6rem;
+  right: 3rem;
+  z-index: 99;
+  font-size: 5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.5rem;
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+#up:hover {
+}
+
+#up:not(:hover) {
+  transform: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.3rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes gradient {
   0% {
     background-position: 0% 75%;
@@ -38,9 +74,4 @@ body {
   /* background: rgba(95, 150, 192, 0.8);/ */
   backdrop-filter: brightness(160%) blur(9px);
   letter-spacing: 0.2rem;
-}
-
-p {
-  columns: 1;
-  orphans: 3;
 }
