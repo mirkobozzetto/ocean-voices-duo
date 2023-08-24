@@ -4,11 +4,10 @@ const computePadding = (open) =>
 window.computePadding = computePadding;
 
 // * smooth nav scroll
-
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener("click", function (e) {
+  link.addEventListener("click", (e) => {
     e.preventDefault();
-    let target = document.querySelector(this.getAttribute("href"));
+    let target = document.querySelector(link.getAttribute("href"));
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }
