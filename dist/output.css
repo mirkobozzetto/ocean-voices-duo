@@ -948,18 +948,33 @@ body {
   transform: none;
 }
 
+.mq-br {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .mq-br {
+    display: block;
+  }
+
+  #up {
+    font-size: 3.5rem;
+    bottom: 3rem;
+    right: 1.5rem;
+  }
+}
+
 .hidden {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   html {
-    scroll-padding-top: 7rem;
-    /* Ajuste cette valeur en fonction de la hauteur de ta barre de navigation */
+    scroll-padding-top: 5rem;
   }
 
   .mobile-margin-top {
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
 }
 
