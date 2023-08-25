@@ -39,11 +39,21 @@ body {
     transform 0.3s ease-in-out;
 }
 
-#up:hover {
-}
-
 #up:not(:hover) {
   transform: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 7rem; /* Ajuste cette valeur en fonction de la hauteur de ta barre de navigation */
+  }
+  .mobile-margin-top {
+    margin-top: 7rem;
+  }
 }
 
 @keyframes bounce {

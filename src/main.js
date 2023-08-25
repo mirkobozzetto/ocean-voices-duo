@@ -13,3 +13,36 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     }
   });
 });
+
+// * traduction
+const toggleLanguage = (lang) => {
+  const enElements = document.querySelectorAll('[id$="-en"]');
+  const frElements = document.querySelectorAll('[id$="-fr"]');
+
+  if (lang === "en") {
+    enElements.forEach((element) => element.classList.remove("hidden"));
+    frElements.forEach((element) => element.classList.add("hidden"));
+  } else {
+    enElements.forEach((element) => element.classList.add("hidden"));
+    frElements.forEach((element) => element.classList.remove("hidden"));
+  }
+};
+
+document
+  .getElementById("english")
+  .addEventListener("click", () => toggleLanguage("en"));
+document
+  .getElementById("french")
+  .addEventListener("click", () => toggleLanguage("fr"));
+
+//* bug mobil scroll correction
+
+link.addEventListener("click", (e) => {
+  e.preventDefault();
+  setTimeout(() => {
+    let target = document.querySelector(link.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  }, 100); // Tu peux ajuster ce délai si besoin
+});
