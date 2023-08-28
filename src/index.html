@@ -39,7 +39,7 @@
           >
             <a href="#home" id="link-home">Home</a>
             <a href="#bio" id="link-bio">Bio</a>
-            <a href="#contacts" id="contacts">Contacts</a>
+            <a href="#contacts" id="link-contacts">Contacts</a>
           </div>
 
           <!-- Bouton burger (pour les petits écrans) -->
@@ -79,11 +79,7 @@
             <a href="#bio" id="bio-mobile" class="mb-4" @click="open = false"
               >Bio</a
             >
-            <a
-              href="#contacts"
-              id="contacts-mobile"
-              class=""
-              @click="open = false"
+            <a href="#contacts" id="contacts-mobile" @click="open = false"
               >Contacts</a
             >
           </div>
@@ -256,7 +252,7 @@
             &nbsp;
           </div>
           <img
-            src="./img/dcba6469-eff4-4a09-b96f-0bfafcbadc0d.jpg"
+            src="./img/OVD-BIO-desktop1.jpeg"
             alt="Guillaume Vanespen & Thanas Kas"
             class="w-[100%] border-2 border-gray-50 object-cover object-center"
           />
@@ -299,7 +295,12 @@
               of a tour ...<br /><br />
 
               And a big project coming up, Ocean Voices Duo enhanced by
-              <br />Veejaying, thanks to 3Dream3r(Xav) !<br /><br />
+              <br />Veejaying, thanks to
+              <a
+                href="https://www.instagram.com/3dream3r/?hl=fr"
+                class="underline hover:no-underline"
+                >3Dream3r</a
+              >(Xav) !<br /><br />
 
               We'll keep you posted on our progress!<br /><br /><br /><br />
 
@@ -339,7 +340,13 @@
               2024 ... <br />ainsi qu'à l' organisation d' une tournée ...<br /><br />
 
               Et un grand projet à venir, Ocean Voices Duo accompagné de
-              Veejaying <br />grâce à 3Dream3r (Xav) !<br /><br />
+              Veejaying <br />grâce à
+              <a
+                href="https://www.instagram.com/3dream3r/?hl=fr"
+                class="underline hover:no-underline"
+                >3Dream3r</a
+              >
+              (Xav) !<br /><br />
 
               Nous vous tiendrons au courant <br class="mq-br" />
               des avancées !<br /><br /><br /><br />
@@ -350,8 +357,44 @@
           </div>
         </div>
       </section>
+      <!-- Contacts section -->
+      <section
+        class="flex flex-col sm:mt-8 md:mt-0 md:flex-row md:pt-24"
+        id="contacts"
+      >
+        <div class="max-w-full px-1 text-sm md:text-base">
+          <!--  -->
+          <h2
+            class="mobile-margin-top mb-2 text-xl font-semibold text-gray-50 md:mb-12 md:text-5xl"
+          >
+            Contacts
+          </h2>
+          <p class="text-gray-50 md:text-lg">
+            Guillaume Vanespen :
+            <a
+              href="mailto:guillaume.vanespen@artsetpublics.be"
+              class="text-white underline hover:no-underline focus:no-underline"
+              >guillaume.vanespen@artsetpublics.be</a
+            ><br />
+            Fb : Under construction...<br />
+            Instagram : Under construction...<br />
+            3Dream3r (Xav) :
+            <a
+              href="https://www.instagram.com/3dream3r/?hl=fr"
+              class="text-white underline hover:no-underline focus:no-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              >https://www.instagram.com/3dream3r/?hl=fr</a
+            ><br />
+          </p>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <!--  -->
+      </section>
     </div>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <!-- scripts -->
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
