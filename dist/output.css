@@ -640,26 +640,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .block {
   display: block;
 }
@@ -1134,12 +1114,12 @@ body {
     width: 21vw;
   }
 
-  .md\:w-\[83\.25vw\] {
-    width: 83.25vw;
-  }
-
   .md\:w-\[44vw\] {
     width: 44vw;
+  }
+
+  .md\:w-\[83\.25vw\] {
+    width: 83.25vw;
   }
 
   .md\:flex-row {
